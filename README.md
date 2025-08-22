@@ -23,3 +23,4 @@ This is a static site for Al Isra IELTS Coaching Academy (Saddar, Rawalpindi).
 - Replace Google Map link (button) if you have a more precise pin.
 - Add your images/logo (recommended).
 
+## Just another Commit
