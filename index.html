@@ -35,6 +35,14 @@
     footer{background:#0f172a;color:#cbd5e1}
     .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
     .copyright{border-top:1px solid #1e293b;margin-top:20px;padding:16px 0;color:#94a3b8}
+    /* Testimonials Styles */
+    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:24px}
+    .testimonial-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(2,6,23,.08);display:flex;flex-direction:column}
+    .testimonial-img{width:100%;height:auto;max-height:240px;object-fit:contain;border-bottom:1px solid #e2e8f0}
+    .testimonial-content{padding:18px}
+    .testimonial-content h3{margin:0 0 8px;color:#0f172a}
+    .score{font-size:16px;color:#0f172a;margin:0 0 12px}
+    .score strong{color:#dc2626;font-size:18px}
   </style>
   <script type="application/ld+json">
   {
@@ -101,6 +109,37 @@
         <article class="card"><h3>Small Class Sizes</h3><p class="muted">Personalized feedback and targeted correction, not overcrowded lectures.</p></article>
         <article class="card"><h3>Weekly Mocks</h3><p class="muted">Band‑style reporting so you always know where you stand.</p></article>
         <article class="card"><h3>Flexible Timings</h3><p class="muted">Morning and evening options to suit students and working professionals.</p></article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <span class="pill">Success Stories</span>
+      <h2>Our students achieve their target scores</h2>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <img src="images/testimonial1.svg" alt="Hammad Akram IELTS Certificate" class="testimonial-img">
+          <div class="testimonial-content">
+            <h3>Hammad Akram</h3>
+            <p class="score">Overall Band: <strong>7.0</strong></p>
+            <p class="muted">"Al Isra's focused approach helped me achieve my target score for university admission."</p>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <img src="images/testimonial2.svg" alt="Bushra Javed IELTS Certificate" class="testimonial-img">
+          <div class="testimonial-content">
+            <h3>Bushra Javed</h3>
+            <p class="score">Overall Band: <strong>7.0</strong></p>
+            <p class="muted">"The weekly mock tests were invaluable in preparing me for the actual exam."</p>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <img src="images/testimonial3.svg" alt="Gulam Fatima IELTS Certificate" class="testimonial-img">
+          <div class="testimonial-content">
+            <h3>Gulam Fatima</h3>
+            <p class="score">UKVI Life Skills: <strong>PASS</strong></p>
+            <p class="muted">"The personalized coaching for UKVI Life Skills A1 helped me pass on my first attempt."</p>
+          </div>
+        </article>
       </div>
     </section>
 

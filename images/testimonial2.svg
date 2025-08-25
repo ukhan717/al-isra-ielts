@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#ffffff"/>
+  <rect x="50" y="50" width="700" height="500" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- IELTS Certificate -->
+  <rect x="100" y="100" width="400" height="300" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="150" y="140" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0f172a">IELTS Test Report Form</text>
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="16" fill="#334155">Candidate: Bushra Javed</text>
+  <text x="150" y="210" font-family="Arial, sans-serif" font-size="16" fill="#334155">Test Date: 19/JUN/2025</text>
+  
+  <!-- Test Results -->
+  <rect x="150" y="240" width="300" height="120" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="170" y="270" font-family="Arial, sans-serif" font-size="14" fill="#334155">Listening: 7.5</text>
+  <text x="170" y="300" font-family="Arial, sans-serif" font-size="14" fill="#334155">Reading: 7.0</text>
+  <text x="170" y="330" font-family="Arial, sans-serif" font-size="14" fill="#334155">Writing: 6.5</text>
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="14" fill="#334155">Speaking: 7.0</text>
+  <text x="300" y="300" font-family="Arial, sans-serif" font-size="14" fill="#334155">Overall: 7.0</text>
+  <text x="300" y="330" font-family="Arial, sans-serif" font-size="14" fill="#334155">CEFR: C1</text>
+  
+  <!-- Student Photo Placeholder -->
+  <rect x="520" y="120" width="150" height="180" rx="5" fill="#e2e8f0"/>
+  <circle cx="595" cy="170" r="30" fill="#94a3b8"/>
+  <rect x="565" y="210" width="60" height="60" rx="5" fill="#94a3b8"/>
+  
+  <!-- Al Isra Branding -->
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#dc2626">OVERALL BAND SCORE</text>
+  
+  <!-- Score Circle -->
+  <circle cx="400" cy="520" r="60" fill="#dc2626" stroke="#ffffff" stroke-width="3"/>
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#ffffff">7.0</text>
+</svg>
