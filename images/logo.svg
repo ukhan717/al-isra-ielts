@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <circle cx="400" cy="400" r="380" fill="white" stroke="#1e3a8a" stroke-width="20"/>
+  <path d="M150 400 Q 200 200 400 150 Q 600 200 650 400 Q 600 600 400 650 Q 200 600 150 400" fill="#eab308" stroke="none"/>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="100" font-weight="bold" text-anchor="middle" fill="#1e3a8a" dominant-baseline="middle">AL ISRA TRAINING INSTITUTE</text>
+  <g transform="translate(400, 400) scale(0.4)">
+    <path d="M0 -150 L-100 -50 L100 -50 Z" fill="#1e3a8a"/>
+    <rect x="-150" y="-50" width="300" height="50" fill="#1e3a8a"/>
+    <path d="M-150 0 L-150 100 L150 100 L150 0 M-120 20 L-120 80 L120 80 L120 20" fill="#1e3a8a"/>
+    <path d="M-50 -150 L-50 -100 L50 -100 L50 -150" fill="#1e3a8a"/>
+  </g>
+  <path d="M100 650 L700 650" stroke="#dc2626" stroke-width="60"/>
+  <text x="400" y="650" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#eab308" dominant-baseline="middle">A JOURNEY TOWARDS SUCCESS</text>
+</svg>
