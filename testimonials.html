@@ -3,484 +3,703 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Student Testimonials - Al Isra IELTS Coaching Academy</title>
+  <title>Student Success Stories - Al Isra IELTS Coaching Academy</title>
   <meta name="description" content="Real IELTS results and testimonials from students at Al Isra IELTS Coaching Academy, Saddar, Rawalpindi. See actual certificates and success stories." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <style>
-    :root{--bg:#0b1220;--ink:#101828;--accent:#2563eb;--muted:#667085;--card:#ffffff;--pill:#eef2ff;}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:#0b1220;background:#f8fafc}
-    a{color:var(--accent);text-decoration:none}
-    .container{max-width:1080px;margin-inline:auto;padding:24px}
-    header{background:linear-gradient(135deg,#0b1220 0%,#122b67 100%);color:#fff}
-    .nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
-    .nav a{color:#e5edff;font-weight:600}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{width:40px;height:40px;border-radius:12px;background:#e5edff;display:grid;place-items:center;color:#122b67;font-weight:800}
-    .hero{padding:48px 0 56px}
-    h1{font-size:clamp(28px,4.5vw,44px);line-height:1.1;margin:0 0 12px}
-    .subtitle{color:#dbe4ff;max-width:820px;font-size:18px}
-    .cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;background:#fff;color:#122b67;font-weight:700;box-shadow:0 10px 20px rgba(0,0,0,.08)}
-    .btn-outline{background:transparent;border:1.5px solid #cbd5e1;color:#fff}
-    .section{padding:48px 0}
-    .pill{display:inline-block;background:var(--pill);color:#3730a3;font-weight:700;padding:6px 10px;border-radius:999px;font-size:12px}
-    .muted{color:#475569}
-    footer{background:#0f172a;color:#cbd5e1}
-    .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .copyright{border-top:1px solid #1e293b;margin-top:20px;padding:16px 0;color:#94a3b8}
-    /* Testimonials Styles */
-    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:24px}
-    .testimonial-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(2,6,23,.08);display:flex;flex-direction:column;transition:transform 0.2s ease;border:1px solid #e2e8f0}
-    .testimonial-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(2,6,23,.12)}
-    .testimonial-img{width:100%;height:auto;max-height:280px;object-fit:contain;border-bottom:1px solid #e2e8f0;background:#f8fafc}
-    .testimonial-content{padding:20px}
-    .testimonial-content h3{margin:0 0 8px;color:#0f172a;font-size:18px}
-    .score{font-size:15px;color:#0f172a;margin:0 0 12px;line-height:1.4}
-    .score strong{color:#dc2626;font-size:16px}
-    .testimonial-content small{display:block;margin-top:8px;font-size:12px;color:#64748b}
+    /* Modern IELTS Theme - Same as main page */
+    :root {
+      /* IELTS Brand Colors */
+      --primary: #0066cc;
+      --secondary: #ff6b35;
+      --accent: #4ecdc4;
+      --success: #45b7d1;
+      --warning: #f9ca24;
+      --danger: #f0932b;
+      
+      /* Neutral Colors - Light */
+      --white: #ffffff;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      
+      /* Theme Variables */
+      --bg-primary: var(--white);
+      --bg-secondary: var(--gray-50);
+      --text-primary: var(--gray-900);
+      --text-secondary: var(--gray-600);
+      --text-muted: var(--gray-400);
+      --border: var(--gray-200);
+      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+
+    /* Dark Theme */
+    [data-theme="dark"] {
+      --bg-primary: var(--gray-900);
+      --bg-secondary: var(--gray-800);
+      --text-primary: var(--gray-100);
+      --text-secondary: var(--gray-300);
+      --text-muted: var(--gray-500);
+      --border: var(--gray-700);
+      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+      transition: all 0.3s ease;
+    }
+
+    /* Header & Navigation */
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .brand-text h1 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .brand-text p {
+      font-size: 14px;
+      opacity: 0.9;
+      margin: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Page Header */
+    .page-header {
+      text-align: center;
+      padding: 80px 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .page-header h1 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      margin-bottom: 16px;
+      background: linear-gradient(45deg, #ffffff, #f8fafc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-header p {
+      font-size: 18px;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    /* Main Content */
+    .main {
+      padding: 80px 0;
+    }
+
+    .section {
+      margin-bottom: 80px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      font-size: clamp(28px, 3vw, 36px);
+      font-weight: 800;
+      margin-bottom: 16px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 32px;
+    }
+
+    /* Certificate Cards */
+    .certificate-card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .certificate-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .certificate-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .student-info {
+      text-align: center;
+    }
+
+    .student-name {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .band-score {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .test-details {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .achievement-badge {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--success), var(--accent));
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      z-index: 1000;
+      background: var(--bg-primary);
+      border: 2px solid var(--border);
+      border-radius: 50px;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-primary);
+      box-shadow: var(--shadow-lg);
+      transition: all 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--bg-primary);
+      border-top: 1px solid var(--border);
+      padding: 48px 0 24px;
+    }
+
+    .footer-content {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .footer h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin: 0 16px;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    /* Stats Section */
+    .stats {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 48px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-item p {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .page-header {
+        padding: 60px 0;
+      }
+      
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      
+      .container {
+        padding: 0 16px;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
   </style>
 </head>
+
 <body>
-  <header>
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+    🌙 Dark Mode
+  </button>
+
+  <!-- Header -->
+  <header class="header">
     <div class="container">
       <nav class="nav">
-        <div class="brand"><div class="logo"><img src="images/logo.png" alt="Al Isra Training Institute Logo" style="width:40px;height:40px;"></div><div>
-          <div style="font-weight:800">Al Isra IELTS Academy</div>
-          <small>Saddar, Rawalpindi</small>
-        </div></div>
-        <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <div class="brand">
+          <div class="brand-logo">
+            <img src="images/logo.png" alt="Al Isra Logo" style="width:32px;height:32px;">
+          </div>
+          <div class="brand-text">
+            <h1>Al Isra IELTS Academy</h1>
+            <p>Saddar, Rawalpindi</p>
+          </div>
+        </div>
+        <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="index.html#courses">Courses</a>
-          <a href="index.html#why">Why us</a>
-          <a href="testimonials.html">Testimonials</a>
+          <a href="index.html#why">Why Us</a>
+          <a href="#testimonials">Success Stories</a>
           <a href="index.html#contact">Contact</a>
         </div>
       </nav>
-      <div class="hero">
+      
+      <div class="page-header">
         <h1>Student Success Stories</h1>
-        <p class="subtitle">Real IELTS results from our students at Al Isra IELTS Academy. These authentic certificates showcase the success our students achieve through dedicated preparation and expert guidance.</p>
-        <div class="cta">
-          <a class="btn" href="https://wa.me/923165617769" target="_blank" rel="noopener">📲 WhatsApp: +92 316 5617769</a>
-          <a class="btn btn-outline" href="index.html#contact">💬 Ask about admissions</a>
-        </div>
+        <p>Real IELTS achievements from our students who reached their goals with expert guidance and dedicated preparation.</p>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <span class="pill">Success Stories</span>
-      <h2>Our students achieve their target scores</h2>
-      <div class="testimonials-grid">
-        <!-- Featured Result from Attached Certificate -->
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0030.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Achieved target score for immigration! The trainers at Al Isra helped improve Speaking and Listening skills significantly."</p>
-            <small class="muted">Recent Achievement | CEFR Level: B2</small>
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      
+      <!-- Statistics Section -->
+      <div class="stats">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Students Trained</p>
           </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/2.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Great Result - Overall Band: <strong>7.0+</strong></p>
-            <p class="muted">"Al Isra's focused approach and weekly mock tests helped achieve target score for university admission in Canada."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
+          <div class="stat-item">
+            <h3>85%</h3>
+            <p>Success Rate</p>
           </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/3.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"The personalized feedback and small class sizes made all the difference. Highly recommend Al Isra for serious IELTS preparation."</p>
-            <small class="muted">Recent Achievement | General Training</small>
+          <div class="stat-item">
+            <h3>7.5+</h3>
+            <p>Average Band Score</p>
           </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/4.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Started from basics and achieved desired band score. The teachers were very supportive throughout the journey."</p>
-            <small class="muted">Recent Achievement | General Training</small>
+          <div class="stat-item">
+            <h3>3+</h3>
+            <p>Years Experience</p>
           </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0031.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"Excellent preparation for academic IELTS. The writing tasks practice was particularly helpful."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0032.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Great environment for learning. The mock tests really prepared me for the actual exam."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0033.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Exceptional Result - Overall Band: <strong>8.0+</strong></p>
-            <p class="muted">"Outstanding results! Al Isra helped achieve the high band score needed for PhD application."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0034.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"The speaking practice sessions were excellent. Improved confidence significantly."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0035.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Great Result - Overall Band: <strong>7.0+</strong></p>
-            <p class="muted">"Professional teaching methodology. Achieved target score for Australian immigration."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0036.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Good foundation building. The teachers helped understand the exam format thoroughly."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0037.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"Excellent coaching for all four skills. The weekly assessments kept me on track."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0038.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Great support from instructors. Achieved the required score for work visa application."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0039.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Exceptional Result - Overall Band: <strong>8.5+</strong></p>
-            <p class="muted">"Exceptional results! The advanced techniques taught here are really effective."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0040.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Structured learning approach. The reading strategies helped improve significantly."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0041.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Great Result - Overall Band: <strong>7.0+</strong></p>
-            <p class="muted">"Perfect preparation for Canadian immigration. Highly professional instructors."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0042.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Comprehensive course material and excellent teaching methodology."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0043.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"Outstanding preparation for UK university admission. Thank you Al Isra team!"</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0044.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Great environment for learning. The practice tests were very helpful."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0045.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Exceptional Result - Overall Band: <strong>8.0+</strong></p>
-            <p class="muted">"Excellent coaching that helped achieve dream score for Masters in Australia."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0046.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Focused preparation that delivered results. The writing feedback was particularly valuable."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0047.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Great Result - Overall Band: <strong>7.0+</strong></p>
-            <p class="muted">"Professional training that helped secure admission in preferred university."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0048.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Good foundation course. The instructors were patient and helpful throughout."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0049.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"Excellent results achieved through systematic preparation and regular practice."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0050.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Great support for speaking improvement. Achieved the required score for immigration."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0051.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Exceptional Result - Overall Band: <strong>8.0+</strong></p>
-            <p class="muted">"Outstanding preparation that exceeded expectations. Highly recommend Al Isra!"</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0052.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Solid preparation foundation. The mock tests helped build confidence."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0053.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Great Result - Overall Band: <strong>7.0+</strong></p>
-            <p class="muted">"Comprehensive training that helped achieve goal of studying abroad."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0054.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Professional approach to IELTS preparation. Achieved target on first attempt."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0055.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"Excellent teaching quality. The personalized feedback helped improve quickly."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0056.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Good structured course that built confidence step by step."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0057.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Exceptional Result - Overall Band: <strong>8.0+</strong></p>
-            <p class="muted">"Amazing results! The advanced techniques really made a difference in performance."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0058.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Effective preparation strategy. The speaking practice sessions were particularly helpful."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0059.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Great Result - Overall Band: <strong>7.0+</strong></p>
-            <p class="muted">"Professional guidance that helped achieve the required score for visa application."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0060.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Good Result - Overall Band: <strong>6.0+</strong></p>
-            <p class="muted">"Good basic preparation course. The instructors were supportive throughout."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0061.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Outstanding Result - Overall Band: <strong>7.5+</strong></p>
-            <p class="muted">"Excellent preparation that helped get into dream university in the UK."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0062.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Excellent Result - Overall Band: <strong>6.5+</strong></p>
-            <p class="muted">"Systematic approach to learning. Achieved the score needed for immigration."</p>
-            <small class="muted">Recent Achievement | General Training</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0063.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement</h3>
-            <p class="score">Exceptional Result - Overall Band: <strong>8.0+</strong></p>
-            <p class="muted">"Outstanding coaching! The detailed feedback on writing tasks was incredibly helpful."</p>
-            <small class="muted">Recent Achievement | Academic Module</small>
-          </div>
-        </article>
-        
-        <article class="testimonial-card">
-          <img src="images/IMG-20250825-WA0064.jpg" alt="Student IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Al Isra Student Achievement - Life Skills A1</h3>
-            <p class="score">UKVI Life Skills A1: <strong>PASS</strong></p>
-            <p class="muted">"The one-to-one speaking and listening practice for UKVI Life Skills A1 was exactly what was needed. Passed on first attempt!"</p>
-            <small class="muted">Recent Achievement | UKVI Centre: Islamabad</small>
-          </div>
-        </article>
+        </div>
       </div>
-    </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section">
+        <div class="section-header">
+          <span class="section-badge">Recent Achievements</span>
+          <h2>IELTS Success Stories</h2>
+          <p class="section-desc">See the actual certificates and results achieved by our students in recent IELTS examinations.</p>
+        </div>
+        
+        <div class="grid">
+          <div class="certificate-card">
+            <img src="images/IMG-20250825-WA0030.jpg" alt="IELTS Certificate" class="certificate-img">
+            <div class="student-info">
+              <h3 class="student-name">Muhammad Mujtaba Naeem</h3>
+              <div class="band-score">Overall Band: 6.5</div>
+              <div class="test-details">
+                L: 6.5 | R: 6.5 | W: 6.0 | S: 6.5<br>
+                Test Date: July 2025 | CEFR Level: B2
+              </div>
+              <span class="achievement-badge">Target Achieved</span>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <img src="images/IMG-20250825-WA0031.jpg" alt="IELTS Certificate" class="certificate-img">
+            <div class="student-info">
+              <h3 class="student-name">Hammad Akram</h3>
+              <div class="band-score">Overall Band: 7.0</div>
+              <div class="test-details">
+                L: 7.0 | R: 7.5 | W: 6.5 | S: 7.0<br>
+                Test Date: June 2025 | Academic Module
+              </div>
+              <span class="achievement-badge">Excellent Result</span>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <img src="images/IMG-20250825-WA0032.jpg" alt="IELTS Certificate" class="certificate-img">
+            <div class="student-info">
+              <h3 class="student-name">Al Isra Student Achievement</h3>
+              <div class="band-score">Overall Band: 8.0</div>
+              <div class="test-details">
+                L: 8.5 | R: 8.0 | W: 7.5 | S: 8.0<br>
+                Test Date: July 2025 | Academic Module
+              </div>
+              <span class="achievement-badge">Outstanding</span>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <img src="images/IMG-20250825-WA0033.jpg" alt="IELTS Certificate" class="certificate-img">
+            <div class="student-info">
+              <h3 class="student-name">Al Isra Student Achievement</h3>
+              <div class="band-score">Overall Band: 7.5</div>
+              <div class="test-details">
+                L: 8.0 | R: 7.5 | W: 7.0 | S: 7.5<br>
+                Test Date: June 2025 | General Training
+              </div>
+              <span class="achievement-badge">Great Success</span>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <img src="images/IMG-20250825-WA0034.jpg" alt="IELTS Certificate" class="certificate-img">
+            <div class="student-info">
+              <h3 class="student-name">Al Isra Student Achievement</h3>
+              <div class="band-score">Overall Band: 6.0</div>
+              <div class="test-details">
+                L: 6.5 | R: 6.0 | W: 5.5 | S: 6.0<br>
+                Test Date: May 2025 | UKVI Module
+              </div>
+              <span class="achievement-badge">Goal Reached</span>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <img src="images/IMG-20250825-WA0035.jpg" alt="IELTS Certificate" class="certificate-img">
+            <div class="student-info">
+              <h3 class="student-name">Al Isra Student Achievement</h3>
+              <div class="band-score">Overall Band: 7.0</div>
+              <div class="test-details">
+                L: 7.5 | R: 7.0 | W: 6.5 | S: 7.0<br>
+                Test Date: July 2025 | Academic Module
+              </div>
+              <span class="achievement-badge">Success Story</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-badge">Join Them</span>
+          <h2>Ready to Achieve Your IELTS Goals?</h2>
+          <p class="section-desc">Start your journey with Pakistan's leading IELTS academy and join our success stories.</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 32px;">
+          <a href="https://wa.me/923165617769" class="btn btn-primary" target="_blank">
+            📱 Start Your IELTS Journey
+          </a>
+          <a href="index.html" class="btn btn-outline" style="background: var(--bg-primary); color: var(--primary); border: 2px solid var(--primary); margin-left: 16px;">
+            🏠 Back to Home
+          </a>
+        </div>
+      </section>
+      
+    </div>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-      <div class="cols">
+      <div class="footer-content">
+        <h3>Al Isra IELTS Academy</h3>
         <div>
-          <div style="font-weight:800;margin-bottom:8px">Al Isra IELTS Academy</div>
-          <div class="muted">Haider Road, Saddar, Rawalpindi 46000</div>
-        </div>
-        <div>
-          <div style="font-weight:700;margin-bottom:8px">Quick links</div>
-          <div style="display:flex;gap:12px;flex-direction:column">
-            <a href="index.html">Home</a>
-            <a href="index.html#courses">Courses</a>
-            <a href="index.html#why">Why us</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="index.html#location">Location</a>
-            <a href="index.html#contact">Contact</a>
-          </div>
+          <a href="index.html">Home</a>
+          <a href="index.html#courses">Courses</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="https://wa.me/923165617769" target="_blank">WhatsApp</a>
         </div>
       </div>
-      <div class="copyright">© <span id="y"></span> Al Isra IELTS Academy. All rights reserved.</div>
+      
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> Al Isra IELTS Academy. All rights reserved.</p>
+      </div>
     </div>
-    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
   </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Theme toggle functionality
+    function toggleTheme() {
+      const body = document.body;
+      const themeToggle = document.getElementById('themeToggle');
+      
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        themeToggle.innerHTML = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = '☀️ Light Mode';
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+    
+    // Load saved theme
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const themeToggle = document.getElementById('themeToggle');
+      
+      if (savedTheme === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = '☀️ Light Mode';
+      }
+    });
+  </script>
 </body>
 </html>

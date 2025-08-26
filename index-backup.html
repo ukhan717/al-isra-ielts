@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al Isra IELTS Coaching Academy – Saddar, Rawalpindi</title>
+  <meta name="description" content="IELTS (Academic, General, UKVI/Life Skills A1), Spoken English & IT short courses at Al Isra IELTS Coaching Academy (Al Isra Training Institute), Haider Road, Saddar, Rawalpindi." />
+  <link rel="preconnect" hre          <a class="btn btn-primary" href="https://wa.me/923165617769" target="_blank">📲 WhatsApp Now</a>
+          <a class="btn btn-outline" href="#location">📍 Visit Us</a>"https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Modern IELTS Theme */
+    :root {
+      /* IELTS Official Colors */
+      --ielts-primary: #2563eb;
+      --ielts-secondary: #7c3aed;
+      --ielts-accent: #059669;
+      --ielts-warning: #f59e0b;
+      --ielts-danger: #dc2626;
+      
+      /* Light Theme */
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Dark Theme */
+    [data-theme="dark"] {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-gradient: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --border: #334155;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+      transition: all 0.3s ease;
+    }
+
+    /* Header Styles */
+    header {
+      background: var(--bg-gradient);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>') repeat;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .brand-text h1 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .brand-text small {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 800;
+      margin-bottom: 24px;
+      background: linear-gradient(45deg, #ffffff, #f1f5f9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero .subtitle {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--ielts-primary);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    /* Main Content */
+    main {
+      padding: 80px 0;
+    }
+
+    .section {
+      margin-bottom: 120px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--ielts-primary), var(--ielts-secondary));
+      color: white;
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      margin-bottom: 16px;
+      background: linear-gradient(45deg, var(--ielts-primary), var(--ielts-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 64px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-primary);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(45deg, var(--ielts-primary), var(--ielts-secondary));
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Special Cards */
+    .card.featured {
+      background: linear-gradient(135deg, var(--ielts-primary), var(--ielts-secondary));
+      color: white;
+    }
+
+    .card.featured h3,
+    .card.featured p {
+      color: white;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      z-index: 1000;
+      background: var(--bg-primary);
+      border: 2px solid var(--border);
+      border-radius: 50px;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-primary);
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-primary);
+      border-top: 1px solid var(--border);
+      padding: 64px 0 32px;
+      margin-top: 120px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 48px;
+      margin-bottom: 32px;
+    }
+
+    .footer-section h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--text-primary);
+    }
+
+    .footer-section a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--ielts-primary);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .hero {
+        padding: 60px 0;
+      }
+      
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      
+      .container {
+        padding: 0 16px;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Al Isra IELTS Coaching Academy (Al Isra Training Institute)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ist Floor, Shamshad Plaza, Computer Market, Near Askari Bank, Haider Road, Saddar",
+      "addressLocality": "Rawalpindi",
+      "postalCode": "46000",
+      "addressCountry": "PK"
+    },
+    "telephone": "+92 316 5617769",
+    "areaServed": ["Rawalpindi","Islamabad"],
+    "sameAs": ["https://www.facebook.com/alisraieltscoachingacadmey","https://www.youtube.com/@AlISRAHUMANE"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+    🌙 Dark Mode
+  </button>
+
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="brand"><div class="logo"><img src="images/logo.png" alt="Al Isra Training Institute Logo" style="width:40px;height:40px;"></div><div>
+          <div style="font-weight:800">Al Isra IELTS Academy</div>
+          <small>Saddar, Rawalpindi</small>
+        </div></div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <a href="#courses">Courses</a>
+          <a href="#why">Why us</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Master IELTS with Expert Guidance</h1>
+        <p class="subtitle">Join Pakistan's leading IELTS Academy in Saddar, Rawalpindi. Get band scores that open doors to your dreams - Academic, General, UKVI & Life Skills A1.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/923165617769" target="_blank" rel="noopener">📲 WhatsApp: +92 316 5617769</a>
+          <a class="btn btn-outline" href="#location">📍 Find us on Haider Road</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="courses" class="section">
+      <span class="pill">Programs</span>
+      <h2>What we teach</h2>
+      <div class="grid">
+        <article class="card"><h3>IELTS Academic</h3><p class="muted">Complete coverage of Listening, Reading, Writing & Speaking with weekly mocks and band-targeted feedback.</p></article>
+        <article class="card"><h3>IELTS General</h3><p class="muted">Focused prep for immigration & work pathways; strategy-led drills and real exam tasks.</p></article>
+        <article class="card"><h3>IELTS UKVI / Life Skills A1</h3><p class="muted">One-to-one speaking & listening practice aligned with UKVI Life Skills A1 requirements.</p></article>
+        <article class="card"><h3>Spoken English</h3><p class="muted">Fluency, pronunciation, and workplace communication in small groups.</p></article>
+        <article class="card"><h3>PTE (optional)</h3><p class="muted">Add-on pathway for candidates who prefer Pearson’s test format.</p></article>
+        <article class="card"><h3>IT Short Courses</h3><p class="muted">Graphic Design, Web Basics, Freelancing essentials and more.</p></article>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <span class="pill">Why choose us</span>
+      <h2>Local, accessible, and results‑driven</h2>
+      <div class="grid">
+        <article class="card"><h3>🎓 Experienced Trainers</h3><p class="muted">Trainers with IELTS classroom experience and a practical, exam‑first approach.</p></article>
+        <article class="card"><h3>👥 Small Class Sizes</h3><p class="muted">Personalized feedback and targeted correction, not overcrowded lectures.</p></article>
+        <article class="card"><h3>📈 Weekly Mocks</h3><p class="muted">Band‑style reporting so you always know where you stand.</p></article>
+        <article class="card"><h3>⏰ Flexible Timings</h3><p class="muted">Morning and evening options to suit students and working professionals.</p></article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <span class="pill">Success Stories</span>
+      <h2>Our students achieve their target scores</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Muhammad Mujtaba Naeem</h3>
+          <p class="score">Overall Band: <strong>6.5</strong> | L: 7.0, R: 6.0, W: 6.0, S: 6.5</p>
+          <p class="muted">"Achieved my target score for immigration! The trainers at Al Isra helped me improve my Speaking and Listening skills significantly."</p>
+          <small class="muted">Test Date: July 2025 | CEFR Level: B2</small>
+        </article>
+        
+        <article class="card">
+          <h3>Hammad Akram</h3>
+          <p class="score">Overall Band: <strong>7.0</strong> | L: 7.5, R: 7.0, W: 6.5, S: 7.0</p>
+          <p class="muted">"Al Isra's focused approach and weekly mock tests helped me achieve my target score for university admission in Canada."</p>
+          <small class="muted">Test Date: June 2025 | Academic Module</small>
+        </article>
+        
+        <article class="card">
+          <h3>Bushra Javed</h3>
+          <p class="score">Overall Band: <strong>7.5</strong> | L: 8.0, R: 7.5, W: 7.0, S: 7.5</p>
+          <p class="muted">"The personalized feedback and small class sizes made all the difference. Highly recommend Al Isra for serious IELTS preparation."</p>
+          <small class="muted">Test Date: May 2025 | General Training</small>
+        </article>
+        
+        <article class="card">
+          <h3>Aisha Malik</h3>
+          <p class="score">Overall Band: <strong>8.0</strong> | L: 8.5, R: 8.0, W: 7.5, S: 8.0</p>
+          <p class="muted">"Outstanding results! Al Isra helped me achieve the high band score I needed for my PhD application."</p>
+          <small class="muted">Test Date: July 2025 | Academic Module</small>
+        </article>
+        
+        <article class="card">
+          <h3>Nadia Shah</h3>
+          <p class="score">Overall Band: <strong>8.5</strong> | L: 9.0, R: 8.5, W: 8.0, S: 8.5</p>
+          <p class="muted">"Exceptional results! The advanced techniques taught here are really effective."</p>
+          <small class="muted">Test Date: May 2025 | Academic Module</small>
+        </article>
+        
+        <article class="card">
+          <h3>Gulam Fatima</h3>
+          <p class="score">UKVI Life Skills A1: <strong>PASS</strong></p>
+          <p class="muted">"The one-to-one speaking and listening practice for UKVI Life Skills A1 was exactly what I needed. Passed on my first attempt!"</p>
+          <small class="muted">Test Date: September 2024 | UKVI Centre: Islamabad</small>
+        </article>
+      </div>
+      
+      <div style="text-align: center; margin-top: 32px;">
+        <a class="btn" href="testimonials.html">📜 View All Student Certificates & Results</a>
+      </div>
+    </section>
+
+    <section id="location" class="section">
+      <span class="pill">Location</span>
+      <h2>Find us in Saddar, Rawalpindi</h2>
+      <p class="muted">Ist Floor, Shamshad Plaza, Computer Market, Near Askari Bank, Haider Road, Saddar, Rawalpindi 46000. (Use Google Maps below; call if you need detailed directions.)</p>
+      <iframe class="map" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps?q=1%20Haider%20Rd,%20Saddar,%20Rawalpindi,%20Punjab%2046000,%20Pakistan&output=embed"></iframe>
+      <p style="margin-top:12px">
+        <a class="btn" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x38df956f1850139f:0x9d7e52b448446577?sa=X&ved=1t:8290&ictx=111&cshid=1755867686905280" target="_blank" rel="noopener">Open in Google Maps</a>
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <span class="pill">Contact</span>
+      <div class="grid">
+        <div class="card">
+          <h3>Call / WhatsApp</h3>
+          <p class="muted"><strong>+92 316 561 7769</strong></p>
+          <p class="muted">Facebook: <a href="https://www.facebook.com/alisraieltscoachingacadmey" target="_blank" rel="noopener">@alisraieltscoachingacadmey</a></p>
+          <p class="muted">YouTube: <a href="https://www.youtube.com/@AlISRAHUMANE" target="_blank" rel="noopener">@AlISRAHUMANE</a></p>
+          <p class="muted">Email: <em>misbahalisra@gmail.com</em></p>
+        </div>
+        <div class="card">
+          <h3>Ask about admissions</h3>
+          <form onsubmit="alert('Thanks! We will contact you back.'); return false;">
+            <label>Name<br><input required name="name" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px"></label><br><br>
+            <label>Phone/WhatsApp<br><input required name="phone" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px"></label><br><br>
+            <label>Program<br>
+              <select name="program" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px">
+                <option>IELTS Academic</option>
+                <option>IELTS General</option>
+                <option>UKVI / Life Skills A1</option>
+                <option>Spoken English</option>
+                <option>PTE</option>
+              </select>
+            </label><br><br>
+            <button class="btn" type="submit">Submit inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="cols">
+        <div>
+          <div style="font-weight:800;margin-bottom:8px">Al Isra IELTS Academy</div>
+          <div class="muted">Haider Road, Saddar, Rawalpindi 46000</div>
+        </div>
+        <div>
+          <div style="font-weight:700;margin-bottom:8px">Quick links</div>
+          <div style="display:flex;gap:12px;flex-direction:column">
+            <a href="#courses">Courses</a>
+            <a href="#why">Why us</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© <span id="y"></span> Al Isra IELTS Academy. All rights reserved.</div>
+    </div>
+    <script>
+      // Set current year
+      document.getElementById('y').textContent = new Date().getFullYear();
+      
+      // Dark theme toggle functionality
+      function toggleTheme() {
+        const body = document.body;
+        const themeToggle = document.getElementById('themeToggle');
+        
+        if (body.getAttribute('data-theme') === 'dark') {
+          body.removeAttribute('data-theme');
+          themeToggle.innerHTML = '🌙 Dark Mode';
+          localStorage.setItem('theme', 'light');
+        } else {
+          body.setAttribute('data-theme', 'dark');
+          themeToggle.innerHTML = '☀️ Light Mode';
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+      
+      // Load saved theme or set default
+      document.addEventListener('DOMContentLoaded', function() {
+        const savedTheme = localStorage.getItem('theme');
+        const themeToggle = document.getElementById('themeToggle');
+        
+        if (savedTheme === 'dark') {
+          document.body.setAttribute('data-theme', 'dark');
+          themeToggle.innerHTML = '☀️ Light Mode';
+        } else {
+          themeToggle.innerHTML = '🌙 Dark Mode';
+        }
+      });
+    </script>
+  </footer>
+</body>
+</html>
