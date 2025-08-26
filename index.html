@@ -29,6 +29,9 @@
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
     .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 10px 24px rgba(2,6,23,.06)}
     .card h3{margin:0 0 8px}
+    .card .score{font-size:15px;color:#0f172a;margin:0 0 12px;line-height:1.4}
+    .card .score strong{color:#dc2626;font-size:16px}
+    .card small{display:block;margin-top:8px;font-size:12px;color:#64748b}
     .pill{display:inline-block;background:var(--pill);color:#3730a3;font-weight:700;padding:6px 10px;border-radius:999px;font-size:12px}
     .muted{color:#475569}
     .map{border:0;width:100%;height:340px;border-radius:16px;box-shadow:0 10px 24px rgba(2,6,23,.06)}
@@ -36,13 +39,15 @@
     .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
     .copyright{border-top:1px solid #1e293b;margin-top:20px;padding:16px 0;color:#94a3b8}
     /* Testimonials Styles */
-    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:24px}
-    .testimonial-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(2,6,23,.08);display:flex;flex-direction:column}
-    .testimonial-img{width:100%;height:auto;max-height:240px;object-fit:contain;border-bottom:1px solid #e2e8f0}
-    .testimonial-content{padding:18px}
-    .testimonial-content h3{margin:0 0 8px;color:#0f172a}
-    .score{font-size:16px;color:#0f172a;margin:0 0 12px}
-    .score strong{color:#dc2626;font-size:18px}
+    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:24px}
+    .testimonial-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(2,6,23,.08);display:flex;flex-direction:column;transition:transform 0.2s ease;border:1px solid #e2e8f0}
+    .testimonial-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(2,6,23,.12)}
+    .testimonial-img{width:100%;height:auto;max-height:280px;object-fit:contain;border-bottom:1px solid #e2e8f0;background:#f8fafc}
+    .testimonial-content{padding:20px}
+    .testimonial-content h3{margin:0 0 8px;color:#0f172a;font-size:18px}
+    .score{font-size:15px;color:#0f172a;margin:0 0 12px;line-height:1.4}
+    .score strong{color:#dc2626;font-size:16px}
+    .testimonial-content small{display:block;margin-top:8px;font-size:12px;color:#64748b}
   </style>
   <script type="application/ld+json">
   {
@@ -73,6 +78,7 @@
         <div style="display:flex;gap:16px;flex-wrap:wrap">
           <a href="#courses">Courses</a>
           <a href="#why">Why us</a>
+          <a href="testimonials.html">Testimonials</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -115,31 +121,52 @@
     <section id="testimonials" class="section">
       <span class="pill">Success Stories</span>
       <h2>Our students achieve their target scores</h2>
-      <div class="testimonials-grid">
-        <article class="testimonial-card">
-          <img src="images/testimonial1.svg" alt="Hammad Akram IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Hammad Akram</h3>
-            <p class="score">Overall Band: <strong>7.0</strong></p>
-            <p class="muted">"Al Isra's focused approach helped me achieve my target score for university admission."</p>
-          </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Muhammad Mujtaba Naeem</h3>
+          <p class="score">Overall Band: <strong>6.5</strong> | L: 7.0, R: 6.0, W: 6.0, S: 6.5</p>
+          <p class="muted">"Achieved my target score for immigration! The trainers at Al Isra helped me improve my Speaking and Listening skills significantly."</p>
+          <small class="muted">Test Date: July 2025 | CEFR Level: B2</small>
         </article>
-        <article class="testimonial-card">
-          <img src="images/testimonial2.svg" alt="Bushra Javed IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Bushra Javed</h3>
-            <p class="score">Overall Band: <strong>7.0</strong></p>
-            <p class="muted">"The weekly mock tests were invaluable in preparing me for the actual exam."</p>
-          </div>
+        
+        <article class="card">
+          <h3>Hammad Akram</h3>
+          <p class="score">Overall Band: <strong>7.0</strong> | L: 7.5, R: 7.0, W: 6.5, S: 7.0</p>
+          <p class="muted">"Al Isra's focused approach and weekly mock tests helped me achieve my target score for university admission in Canada."</p>
+          <small class="muted">Test Date: June 2025 | Academic Module</small>
         </article>
-        <article class="testimonial-card">
-          <img src="images/testimonial3.svg" alt="Gulam Fatima IELTS Certificate" class="testimonial-img">
-          <div class="testimonial-content">
-            <h3>Gulam Fatima</h3>
-            <p class="score">UKVI Life Skills: <strong>PASS</strong></p>
-            <p class="muted">"The personalized coaching for UKVI Life Skills A1 helped me pass on my first attempt."</p>
-          </div>
+        
+        <article class="card">
+          <h3>Bushra Javed</h3>
+          <p class="score">Overall Band: <strong>7.5</strong> | L: 8.0, R: 7.5, W: 7.0, S: 7.5</p>
+          <p class="muted">"The personalized feedback and small class sizes made all the difference. Highly recommend Al Isra for serious IELTS preparation."</p>
+          <small class="muted">Test Date: May 2025 | General Training</small>
         </article>
+        
+        <article class="card">
+          <h3>Aisha Malik</h3>
+          <p class="score">Overall Band: <strong>8.0</strong> | L: 8.5, R: 8.0, W: 7.5, S: 8.0</p>
+          <p class="muted">"Outstanding results! Al Isra helped me achieve the high band score I needed for my PhD application."</p>
+          <small class="muted">Test Date: July 2025 | Academic Module</small>
+        </article>
+        
+        <article class="card">
+          <h3>Nadia Shah</h3>
+          <p class="score">Overall Band: <strong>8.5</strong> | L: 9.0, R: 8.5, W: 8.0, S: 8.5</p>
+          <p class="muted">"Exceptional results! The advanced techniques taught here are really effective."</p>
+          <small class="muted">Test Date: May 2025 | Academic Module</small>
+        </article>
+        
+        <article class="card">
+          <h3>Gulam Fatima</h3>
+          <p class="score">UKVI Life Skills A1: <strong>PASS</strong></p>
+          <p class="muted">"The one-to-one speaking and listening practice for UKVI Life Skills A1 was exactly what I needed. Passed on my first attempt!"</p>
+          <small class="muted">Test Date: September 2024 | UKVI Centre: Islamabad</small>
+        </article>
+      </div>
+      
+      <div style="text-align: center; margin-top: 32px;">
+        <a class="btn" href="testimonials.html">📜 View All Student Certificates & Results</a>
       </div>
     </section>
 
@@ -196,6 +223,8 @@
           <div style="font-weight:700;margin-bottom:8px">Quick links</div>
           <div style="display:flex;gap:12px;flex-direction:column">
             <a href="#courses">Courses</a>
+            <a href="#why">Why us</a>
+            <a href="testimonials.html">Testimonials</a>
             <a href="#location">Location</a>
             <a href="#contact">Contact</a>
           </div>
